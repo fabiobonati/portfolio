@@ -47,6 +47,7 @@ export default function Home() {
         className='col-span-4 h-full flex items-center justify-center bg-yellow-200 rounded-lg
         '
       ></div>
+      <SpotifyStatus />
     </main>
   );
 }
