@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className='col-span-2 h-full flex items-center justify-center bg-[#333] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'>
         <Link
-          href='https://github.io/fabiobonati'
+          href='https://github.com/fabiobonati'
           className='text-white text-4xl'
         >
           <SiGithub />
