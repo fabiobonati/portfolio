@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main className='mx-auto max-w-3xl grid grid-cols-6 gap-6 px-6 pt-12'>
-      <div className='col-span-4 flex items-center justify-center gap-4 bg-violet-200 rounded-lg'>
+      <div className='col-span-4 flex items-center justify-center gap-4 bg-violet-200 rounded-xl'>
         <div className='flex flex-col items-center space-y-4 md:flex-row p-8 md:space-x-4 md:space-y-0 md:h-52'>
           <Image
             src='/memoji.svg'
@@ -28,26 +28,45 @@ export default function Home() {
       </div>
       <Link
         href='https://github.com/fabiobonati'
-        className='col-span-2 h-full flex group items-center justify-center bg-[#333] rounded-lg transform-gpu transition-all duration-500 hover:scale-95 text-white text-4xl'
+        className='col-span-2 h-full flex group items-center justify-center bg-[#333] rounded-xl transform-gpu transition-all duration-500 hover:scale-95 text-white text-4xl'
       >
         <SiGithub className='transition-all duration-500 group-hover:scale-[1.15]' />
       </Link>
       <Link
         href='https://twitter.com/bonatifabioo'
-        className='text-white text-4xl group col-span-2 h-52 flex items-center justify-center bg-[#1DA1F2] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'
+        className='text-white text-4xl group col-span-2 h-52 flex items-center justify-center bg-[#1DA1F2] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
       >
         <SiTwitter className='transition-all duration-500 group-hover:scale-[1.15] group-hover:-rotate-12' />
       </Link>
       <div
-        className='col-span-4 h-full flex items-center justify-center bg-yellow-200 rounded-lg
+        className='col-span-4 h-full flex items-center justify-center bg-green-200 rounded-xl
         '
       ></div>
       <div className='col-span-3 h-52'>
         <SpotifyStatus />
       </div>
+      <div
+        className='col-span-3 md:col-span-2 overflow-hidden bg-white h-full p-8 group flex items-center justify-center rounded-xl transform-gpu transition-all duration-500 hover:scale-95
+      '
+      >
+        <Image
+          className='absolute inset-0 -z-10 h-full w-full object-cover object-center blur-3xl '
+          src='/nitebackground.svg'
+          alt='Nite logo'
+          width={200}
+          height={200}
+        />
+        <Image
+          src='/nitelogo.svg'
+          alt='Nite logo'
+          width={100}
+          height={120}
+          className='transition-all duration-500 group-hover:scale-[1.15]'
+        />
+      </div>
       <Link
         href='https://www.linkedin.com/in/fabiobonati/'
-        className='text-white group text-4xl col-span-2 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'
+        className='text-white group text-4xl col-span-2 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
       >
         <SiLinkedin className='transition-all duration-500 group-hover:scale-[1.15]' />
       </Link>
