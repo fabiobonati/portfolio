@@ -45,9 +45,10 @@ export default function Home() {
       <div className='col-span-3 h-52'>
         <SpotifyStatus />
       </div>
-      <div
+      <Link
         className='col-span-3 md:col-span-2 overflow-hidden bg-white h-full p-8 group flex items-center justify-center rounded-xl transform-gpu transition-all duration-500 hover:scale-95
       '
+        href='https://nite.is'
       >
         <Image
           className='absolute inset-0 -z-10 h-full w-full object-cover object-center blur-3xl '
@@ -63,7 +64,7 @@ export default function Home() {
           height={120}
           className='transition-all duration-500 group-hover:scale-[1.15]'
         />
-      </div>
+      </Link>
       <Link
         href='https://www.linkedin.com/in/fabiobonati/'
         className='text-white group text-4xl col-span-2 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
