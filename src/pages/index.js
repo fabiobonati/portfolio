@@ -3,14 +3,13 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 import SpotifyStatus from '@/components/SpotifyStatus';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main className='mx-auto max-w-3xl grid grid-cols-6 gap-6 px-6 pt-12'>
       <div className='col-span-4 flex items-center justify-center gap-4 bg-violet-200 rounded-lg'>
-        <div className='flex flex-col items-center space-y-4 md:flex-row p-8 md:space-x-4 md:space-y-0'>
+        <div className='flex flex-col items-center space-y-4 md:flex-row p-8 md:space-x-4 md:space-y-0 md:h-52'>
           <Image
             src='/memoji.svg'
             alt='My personal memoji'
@@ -27,27 +26,31 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='col-span-2 h-full flex items-center justify-center bg-[#333] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'>
-        <Link
-          href='https://github.com/fabiobonati'
-          className='text-white text-4xl'
-        >
-          <SiGithub />
-        </Link>
-      </div>
-      <div className='col-span-2 h-52 flex items-center justify-center bg-[#1DA1F2] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'>
-        <Link
-          href='https://twitter.com/bonatifabioo'
-          className='text-white text-4xl'
-        >
-          <SiTwitter />
-        </Link>
-      </div>
+      <Link
+        href='https://github.com/fabiobonati'
+        className='col-span-2 h-full flex group items-center justify-center bg-[#333] rounded-lg transform-gpu transition-all duration-500 hover:scale-95 text-white text-4xl'
+      >
+        <SiGithub className='transition-all duration-500 group-hover:scale-[1.15]' />
+      </Link>
+      <Link
+        href='https://twitter.com/bonatifabioo'
+        className='text-white text-4xl group col-span-2 h-52 flex items-center justify-center bg-[#1DA1F2] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'
+      >
+        <SiTwitter className='transition-all duration-500 group-hover:scale-[1.15] group-hover:-rotate-12' />
+      </Link>
       <div
         className='col-span-4 h-full flex items-center justify-center bg-yellow-200 rounded-lg
         '
       ></div>
-      <SpotifyStatus />
+      <div className='col-span-3 h-52'>
+        <SpotifyStatus />
+      </div>
+      <Link
+        href='https://www.linkedin.com/in/fabiobonati/'
+        className='text-white group text-4xl col-span-2 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-lg transform-gpu transition-all duration-500 hover:scale-95'
+      >
+        <SiLinkedin className='transition-all duration-500 group-hover:scale-[1.15]' />
+      </Link>
     </main>
   );
 }
