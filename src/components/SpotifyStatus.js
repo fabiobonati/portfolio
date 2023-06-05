@@ -96,7 +96,7 @@ const SpotifyStatus = () => {
   return (
     <Link
       href={linkToSong}
-      className='flex rounded-lg p-6 group h-full overflow-hidden transform-gpu transition-all duration-500 hover:scale-95'
+      className='flex rounded-xl p-6 group h-full overflow-hidden transform-gpu transition-all duration-500 hover:scale-95'
     >
       <Image
         src={image}
