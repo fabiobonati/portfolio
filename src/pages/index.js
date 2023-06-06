@@ -48,7 +48,7 @@ export default function Home() {
       >
         <TechStackSlider />
       </div>
-      <div className='col-span-3 h-52'>
+      <div className='col-span-6 md:col-span-3 h-52'>
         <SpotifyStatus />
       </div>
       <Link
@@ -75,7 +75,7 @@ export default function Home() {
       <Link
         href='https://www.linkedin.com/in/fabiobonati/'
         target='_blank'
-        className='text-white group text-4xl col-span-2 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
+        className='text-white group text-4xl col-span-3 md:col-span-1 h-52 flex items-center justify-center bg-[#0077B5] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
       >
         <SiLinkedin className='transition-all duration-500 group-hover:scale-[1.15]' />
       </Link>
