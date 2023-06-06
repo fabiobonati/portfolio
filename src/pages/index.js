@@ -23,7 +23,6 @@ import {
   SiVisualstudiocode,
 } from 'react-icons/si';
 import SpotifyStatus from '@/components/SpotifyStatus';
-import TechStackSlider from '@/components/TechStackSlider';
 import ContactForm from '@/components/ContactForm';
 import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
