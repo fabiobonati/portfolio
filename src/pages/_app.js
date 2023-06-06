@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
         <meta content='width=device-width, initial-scale=1' name='viewport' />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
