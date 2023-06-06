@@ -1,7 +1,27 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
-import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
+import {
+  SiCsharp,
+  SiCss3,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiLinkedin,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPhp,
+  SiPhpstorm,
+  SiPlanetscale,
+  SiPrisma,
+  SiReact,
+  SiTailwindcss,
+  SiTwitter,
+  SiVercel,
+  SiVisualstudiocode,
+} from 'react-icons/si';
 import SpotifyStatus from '@/components/SpotifyStatus';
 import TechStackSlider from '@/components/TechStackSlider';
 import ContactForm from '@/components/ContactForm';
@@ -83,11 +103,25 @@ export default function Home() {
       >
         <SiTwitter className='transition-all duration-500 group-hover:scale-[1.15] group-hover:-rotate-12' />
       </Link>
-      <div
-        className='col-span-4 h-full flex items-center justify-center bg-green-200 rounded-xl
-        '
-      >
-        <TechStackSlider />
+      <div className='col-span-4 h-52 flex items-center justify-center p-6 bg-teal-200 rounded-xl'>
+        <div className='grid w-full grid-cols-4 grid-rows-4 gap-4 [&>svg]:w-full [&>svg]:text-center'>
+          <SiHtml5 size={24} />
+          <SiCss3 size={24} />
+          <SiJavascript size={24} />
+          <SiCsharp size={24} />
+          <SiPhp size={24} />
+          <SiNodedotjs size={24} />
+          <SiTailwindcss size={24} />
+          <SiReact size={24} />
+          <SiNextdotjs size={24} />
+          <SiPrisma size={24} />
+          <SiMysql size={24} />
+          <SiGit size={24} />
+          <SiVercel size={24} />
+          <SiPlanetscale size={24} />
+          <SiVisualstudiocode size={24} />
+          <SiPhpstorm size={24} />
+        </div>
       </div>
       <div className='col-span-6 md:col-span-3 h-52'>
         <SpotifyStatus />
