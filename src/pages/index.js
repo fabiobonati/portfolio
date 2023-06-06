@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 import SpotifyStatus from '@/components/SpotifyStatus';
+import TechStackSlider from '@/components/TechStackSlider';
+import ContactForm from '@/components/ContactForm';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -41,7 +43,9 @@ export default function Home() {
       <div
         className='col-span-4 h-full flex items-center justify-center bg-green-200 rounded-xl
         '
-      ></div>
+      >
+        <TechStackSlider />
+      </div>
       <div className='col-span-3 h-52'>
         <SpotifyStatus />
       </div>
@@ -60,8 +64,8 @@ export default function Home() {
         <Image
           src='/nitelogo.svg'
           alt='Nite logo'
-          width={100}
-          height={120}
+          width={80}
+          height={100}
           className='transition-all duration-500 group-hover:scale-[1.15]'
         />
       </Link>
@@ -71,6 +75,9 @@ export default function Home() {
       >
         <SiLinkedin className='transition-all duration-500 group-hover:scale-[1.15]' />
       </Link>
+      <div className='col-span-6 bg-yellow-200 rounded-xl text-black'>
+        <ContactForm />
+      </div>
     </main>
   );
 }
