@@ -5,11 +5,52 @@ import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 import SpotifyStatus from '@/components/SpotifyStatus';
 import TechStackSlider from '@/components/TechStackSlider';
 import ContactForm from '@/components/ContactForm';
+import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main className='mx-auto max-w-3xl grid grid-cols-6 gap-6 px-6 my-12'>
+      <Head>
+        <title>Fabio Bonati</title>
+        <link rel='icon' href='/favicon.ico' />
+        <meta name='author' content='Fabio Bonati' />
+        <meta name='publisher' content='Fabio Bonati' />
+        <meta
+          name='description'
+          content='Fabio Bonati, 19 y/o software developer and student'
+        />
+        <meta
+          name='keywords'
+          content='Fabio Bonati, bonati, fabio, bonati, software developer, fabio bonati software developer'
+        />
+        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:site' content='@bonatifabioo' />
+        <meta name='twitter:creator' content='@bonatifabioo' />
+        <meta name='twitter:title' content='Fabio Bonati' />
+        <meta name='twitter:description' content='code ✧ @joinnite' />
+        <meta name='twitter:image' content='/memoji.svg' />
+        <meta property='og:title' content='Fabio Bonati' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://fabiobonati.com' />
+        <meta property='og:image' content='/memoji.svg' />
+        <meta
+          property='og:description'
+          content='Fabio Bonati, 19 y/o software developer and student'
+        />
+        <meta property='og:site_name' content='Fabio Bonati' />
+        <meta property='og:locale' content='en_US' />
+        <meta property='og:locale:alternate' content='it_IT' />
+        <meta property='og:locale:alternate' content='en_US' />
+        <meta property='og:locale:alternate' content='en_GB' />
+        <meta property='og:locale:alternate' content='en_CA' />
+        <meta property='og:locale:alternate' content='en_AU' />
+        <meta property='og:locale:alternate' content='en_NZ' />
+        <meta property='og:locale:alternate' content='en_IE' />
+        <meta property='og:locale:alternate' content='en_ZA' />
+        <meta property='og:locale:alternate' content='en_JM' />
+        <meta property='og:locale:alternate' content='en' />
+      </Head>
       <div className='col-span-4 flex items-center justify-center gap-4 bg-violet-200 rounded-xl'>
         <div className='flex flex-col items-center space-y-4 md:flex-row p-8 md:space-x-4 md:space-y-0 md:h-52'>
           <Image
