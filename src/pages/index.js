@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className='mx-auto max-w-3xl grid grid-cols-6 gap-6 px-6 pt-12'>
+    <main className='mx-auto max-w-3xl grid grid-cols-6 gap-6 px-6 my-12'>
       <div className='col-span-4 flex items-center justify-center gap-4 bg-violet-200 rounded-xl'>
         <div className='flex flex-col items-center space-y-4 md:flex-row p-8 md:space-x-4 md:space-y-0 md:h-52'>
           <Image
