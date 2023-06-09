@@ -78,7 +78,6 @@ const SpotifyStatus = () => {
         getLastPlayed(accessToken);
         return;
       }
-      console.log(data);
       setOnline(true);
       const artist = data.item.artists
         .map((_artist) => _artist.name)

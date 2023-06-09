@@ -26,7 +26,6 @@ const ContactForm = () => {
       },
       body: JSON.stringify(webhookBody),
     });
-    console.log(response);
     if (response.status === 204) {
       setLoading(false);
       setSubmitted(true);
