@@ -18,7 +18,7 @@ import {
   SiPrisma,
   SiReact,
   SiTailwindcss,
-  SiTwitter,
+  SiX,
   SiVercel,
   SiVisualstudiocode,
 } from 'react-icons/si';
@@ -55,7 +55,7 @@ export default function Home() {
         <meta property='og:image' content='/memoji.svg' />
         <meta
           property='og:description'
-          content='Fabio Bonati, 19 y/o software developer and student'
+          content='Fabio Bonati, 20 y/o software developer and student'
         />
         <meta property='og:site_name' content='Fabio Bonati' />
         <meta property='og:locale' content='en_US' />
@@ -83,7 +83,7 @@ export default function Home() {
               Fabio Bonati
             </h1>
             <p className='text-violet-700 text-center md:text-left'>
-              19 y/o developer and student from 🇮🇹
+              20 y/o developer and student from 🇮🇹
             </p>
           </div>
         </div>
@@ -98,9 +98,9 @@ export default function Home() {
       <Link
         href='https://twitter.com/bonatifabioo'
         target='_blank'
-        className='text-white text-4xl group col-span-2 h-52 flex items-center justify-center bg-[#1DA1F2] rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
+        className='text-white text-4xl group col-span-2 h-52 flex items-center justify-center bg-black rounded-xl transform-gpu transition-all duration-500 hover:scale-95'
       >
-        <SiTwitter className='transition-all duration-500 group-hover:scale-[1.15] group-hover:-rotate-12' />
+        <SiX className='transition-all duration-500 group-hover:scale-[1.15]' />
       </Link>
       <div className='col-span-4 h-52 flex items-center justify-center p-6 bg-teal-200 rounded-xl'>
         <div className='grid w-full grid-cols-4 grid-rows-4 gap-4 [&>svg]:w-full [&>svg]:text-center'>
